@@ -79,12 +79,12 @@ body {
 }
 
 .job-meta {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 10px;
 }
 
 .desc {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 12px;
 }
 
@@ -132,7 +132,7 @@ body {
   display: inline-block;
   padding: 6px 15px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: white;
   font-weight: bold;
   margin: 6px 0 10px 0;
@@ -160,8 +160,8 @@ body {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .stats {
+@media (max-width: 768px) {
+  .dashboard .stats {
     flex-direction: column;
   }
 }
