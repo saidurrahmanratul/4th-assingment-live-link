@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta viewport="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="dashboard">
+      <h1>Job Application Tracker</h1>
+      <div class="stats">
+        <div class="card">
+          <p>Total</p>
+          <h2 id="totalCount">8</h2>
+        </div>
+        <div class="card">
+          <p>Interview</p>
+          <h2 id="interviewCount">0</h2>
+        </div>
+        <div class="card">
+          <p>Rejected</p>
+          <h2 id="rejectedCount">0</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="jobs-section">
+      <div class="section-header">
+        <h2>Available Jobs</h2>
+        <p id="jobCount">8 jobs</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="all">All</button>
+        <button class="tab" data-tab="interview">Interview</button>
+        <button class="tab" data-tab="rejected">Rejected</button>
+      </div>
+
+      <div id="jobList" class="job-list"></div>
+
+      <div id="emptyState" class="empty hidden">
+        <img src="./jobs.png" alt="Empty" />
+        <h3>No jobs available</h3>
+        <p>Nothing to show in this category.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

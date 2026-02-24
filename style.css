@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f3f7fb;
+  padding: 20px;
+}
+
+.dashboard h1 {
+  margin-bottom: 20px;
+}
+.dashboard .stats {
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard .stats .card {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.202);
+}
+
+.jobs-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #007bff;
+  color: white;
+}
+
+.job-card {
+  background: #f8f9fc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  position: relative;
+}
+
+.job-card.interview {
+  border-left: 5px solid #4caf50;
+}
+
+.job-card.rejected {
+  border-left: 5px solid #e74c3c;
+}
+
+.job-card h3 {
+  margin-bottom: 8px;
+}
+
+.job-meta {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+#interviewCount {
+  color: green;
+}
+#rejectedCount {
+  color: red;
+}
+
+.interview-btn {
+  border: 3px solid green;
+  color: green;
+}
+
+.reject-btn {
+  border: 3px solid red;
+  color: red;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.delete-btn img {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  margin: 6px 0 10px 0;
+}
+
+.badge.interview {
+  background: #4caf50;
+}
+
+.badge.rejected {
+  background: red;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.empty img {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+  }
+}
